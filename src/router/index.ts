@@ -46,6 +46,16 @@ const routes: Array<RouteRecordRaw> = [
                       breadcrumbs: ["AllShipment"],
                     },
                   },
+                  {
+                    path: "/UnbilledShipment",
+                    name: "UnbilledShipment",
+                    component: () => import("@/codeGenerator/UnbilledShipment/views/UnbilledShipmentView.vue"),
+                    meta: {
+                      pageTitle: "UnbilledShipment",
+                      middleware: "auth",
+                      breadcrumbs: ["UnbilledShipment"],
+                    },
+                  },
                   //4d92c553-4b96-4e9c-a12d-3de893057034 
 ];
 
